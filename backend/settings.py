@@ -26,7 +26,7 @@ SECRET_KEY = 'z!cxu@1)%8ri*k1ki=1#s_5rqn%&fh@i&oz)lhh-lnhqxzy+$e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -215,7 +215,7 @@ RQ_QUEUES = {
     },
 }
 
-REDIRECT_URI_MERCADO_PAGO = 'http://localhost:4200/dashboard/financeiro/'
+REDIRECT_URI_MERCADO_PAGO = 'https://inf2.fw.iffarroupilha.edu.br/~camila2019001356/frontend/dashboard/financeiro/'
 INIT_POINT = 'sandbox_init_point'
 PUBLIC_KEY_MELI = 'TEST-5a1bc65b-c89f-427e-bac8-f3ddd15313bc'
 ACCESS_TOKEN_MELI = 'TEST-7398001664558438-020315-1643de2615fefc59a2f96ac92a6fc1a8-241596842'
