@@ -31,6 +31,7 @@ class Acao(models.Model):
     acao = models.TextField()
     resultado_esperado = models.TextField(null=True, blank=True)
     caso_de_teste = models.ForeignKey(CasoDeTeste, on_delete=models.CASCADE)
+    ordem = models.IntegerField(null=True)
 
     def __str__(self):
         return self.acao
