@@ -35,3 +35,6 @@ class Acao(models.Model):
 
     def __str__(self):
         return self.acao
+    
+    class Meta:
+        ordering = ['ordem']
